@@ -13,6 +13,12 @@ Route::view('/home','home');
 
 
 
+Route::get('/login', function () {
+    return view("auth.login");
+});
+Route::get('/registers', function () {
+    return view("auth.register");
+});
 
 
 

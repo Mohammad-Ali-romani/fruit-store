@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up Form by Colorlib</title>
 
-    <!-- Font Icon -->
-    <link rel="stylesheet" href="{{asset('register/fonts/material-icon/css/material-design-iconic-font.min.css')}}">
+    <link rel="stylesheet" href="{{asset('register/css/material-design-iconic-font.min.css')}}">
 
     <!-- Main css -->
     <link rel="stylesheet" href="{{asset('register/css/style.css')}}">
@@ -49,7 +48,7 @@
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                        <figure><img src="{{asset('image/signup-image.jpg')}}" alt="sing up image"></figure>
                         <a href="#" class="signup-image-link">I am already member</a>
                     </div>
                 </div>
@@ -59,7 +58,7 @@
     </div>
 
     <!-- JS -->
-    <script src="{{asset('register/js/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('register/js/jquery.min.js')}}"></script>
     <script src="{{asset('register/js/main.js')}}"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
