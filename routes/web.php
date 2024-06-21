@@ -3,15 +3,10 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+
 Route::get('/', function () {
-    return view('home');
+    return view('front.home');
 });
-
-Route::view('/home','home');
-
-
-
-
 
 Route::get('/login', function () {
     return view("auth.login");
@@ -21,7 +16,13 @@ Route::get('/registers', function () {
 });
 
 
-
+Route::view('/home','front.home');
+Route::view('/cart','front.cart');
+Route::view('/chakout','front.chakout');
+Route::view('/contact','front.contact');
+Route::view('/shop','front.shop');
+Route::view('/shopdetail','front.shopdetail');
+Route::view('/testimonial','front.testimonial');
 
 
 
