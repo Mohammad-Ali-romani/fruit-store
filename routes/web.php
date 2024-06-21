@@ -9,16 +9,16 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view("auth.login");
+    return view("front.auth.login");
 });
-Route::get('/registers', function () {
-    return view("auth.register");
+Route::get('/register', function () {
+    return view("front.auth.register");
 });
 
 
 Route::view('/home','front.home');
 Route::view('/cart','front.cart');
-Route::view('/chakout','front.chakout');
+Route::view('/checkout','front.checkout');
 Route::view('/contact','front.contact');
 Route::view('/shop','front.shop');
 Route::view('/shopdetail','front.shopdetail');

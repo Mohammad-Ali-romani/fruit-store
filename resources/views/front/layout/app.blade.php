@@ -37,11 +37,11 @@
 
     <body>
 
-        @include('layout.navbar')
+        @include('front.layout.navbar')
 
         @yield('content')
 
-        @include('layout.footer')
+        @include('front.layout.footer')
 
         
     <!-- JavaScript Libraries -->
