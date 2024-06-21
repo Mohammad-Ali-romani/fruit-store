@@ -16,13 +16,13 @@ Route::get('/register', function () {
 });
 
 
-Route::view('/home','front.home');
 Route::view('/cart','front.cart');
 Route::view('/checkout','front.checkout');
 Route::view('/contact','front.contact');
 Route::view('/shop','front.shop');
 Route::view('/shopdetail','front.shopdetail');
 Route::view('/testimonial','front.testimonial');
+Route::view('/error','front.error');
 
 
 
