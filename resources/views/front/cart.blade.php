@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('front.layout.app')
 
 @Section('content')
         <!-- Single Page Header start -->
