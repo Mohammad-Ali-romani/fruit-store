@@ -25,12 +25,12 @@
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
-                        <figure><img src="{{asset('image/signup-image.jpg')}}" alt="sing up image"></figure>
+                        <figure><img src="{{asset('image/signin-image.jpg')}}" alt="sing up image"></figure>
                         <a href="#" class="signup-image-link">Create an account</a>
                     </div>
 
                     <div class="signin-form">
-                        <h2 class="form-title">Sign up</h2>
+                        <h2 class="form-title">Log In</h2>
                         <form method="POST" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -60,7 +60,6 @@
                 </div>
             </div>
         </section>
-
     </div>
     <!-- JS -->
     <script src="{{asset('register/js/jquery.min.js')}}"></script>
