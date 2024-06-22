@@ -8,10 +8,10 @@ Route::get('/', function () {
     return view('front.home');
 });
 
-Route::get('/login', function () {
+Route::get('/front.login', function () {
     return view("front.auth.login");
 });
-Route::get('/register', function () {
+Route::get('/front.register', function () {
     return view("front.auth.register");
 });
 
