@@ -459,7 +459,7 @@
             <div class="container py-5">
                 <div class="row g-4 justify-content-center">
                     <div class="col-md-6 col-lg-4">
-                        <a href="#">
+                        <a href="{{url("/shop")}}">
                             <div class="service-item bg-secondary rounded border border-secondary">
                                 <img src="{{asset("image/featur-1.jpg")}}" class="img-fluid rounded-top w-100" alt="">
                                 <div class="px-4 rounded-bottom">
@@ -472,7 +472,7 @@
                         </a>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <a href="#">
+                        <a href="{{url("/shop")}}">
                             <div class="service-item bg-dark rounded border border-dark">
                                 <img src="{{asset("image/featur-2.jpg")}}" class="img-fluid rounded-top w-100" alt="">
                                 <div class="px-4 rounded-bottom">
@@ -485,7 +485,7 @@
                         </a>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <a href="#">
+                        <a href="{{url("/shop")}}">
                             <div class="service-item bg-primary rounded border border-primary">
                                 <img src="{{asset("image/featur-3.jpg")}}" class="img-fluid rounded-top w-100" alt="">
                                 <div class="px-4 rounded-bottom">
@@ -635,7 +635,7 @@
                             <h1 class="display-3 text-white">Fresh Exotic Fruits</h1>
                             <p class="fw-normal display-3 text-dark mb-4">in Our Store</p>
                             <p class="mb-4 text-dark">The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.</p>
-                            <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
+                            <a href="{{url("/shop")}}" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
