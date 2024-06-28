@@ -24,6 +24,8 @@ Route::view('/shopdetail','front.shopdetail');
 Route::view('/testimonial','front.testimonial');
 Route::view('/error','front.error');
 
+Route::view('/index','Dashboard.index');
+
 
 
 Route::get('/dashboard', function () {
