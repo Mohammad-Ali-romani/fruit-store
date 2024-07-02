@@ -23,7 +23,6 @@ Route::view('/shop','front.shop');
 Route::view('/shopdetail','front.shopdetail');
 Route::view('/testimonial','front.testimonial');
 Route::view('/error','front.error');
-
 Route::view('/index','Dashboard.index');
 
 
