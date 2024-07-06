@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class DiscRequest extends FormRequest
+class Meta_ProductRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,10 +22,7 @@ class DiscRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //required validation
-            'name'          =>           'required',
-            'desc'          =>           'required',
-            'image'         =>           'required|mimes:jpg,bmp,png',
+            //
         ];
     }
 }
