@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Meta_ProductRequest;
-use App\Models\Meta_Product;
+use App\Http\Requests\TagsRequest;
+use App\Models\Tags;
 use Illuminate\Http\Request;
 
-class Meta_ProductController extends Controller
+class TagsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class Meta_ProductController extends Controller
     public function index()
     {
         //index the resource
-        $meta = Meta_Product::all();
-        return view("Meta.index",compact('meta'));
+        $tags = Tags::all();
+        return view("Tags.index",compact('tags'));
     }
 
     /**
@@ -24,20 +24,20 @@ class Meta_ProductController extends Controller
     public function create()
     {
         //create a new resource
-        return view("Meta.create");
+        return view("Tags.create");
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Meta_ProductRequest $request)
+    public function store(TagsRequest $request)
     {
-        //store the new resource
-        $meta = Meta_Product::create([$request->all()]);
-        if(!$meta){
+        //store the resource
+        $tags = Tags::create($request->all());
+        if(!$tags){
             return redirect()->back();
         }
-        return redirect()->route("Meta.index");
+        return redirect()->route("Tags.index");
     }
 
     /**
@@ -46,11 +46,11 @@ class Meta_ProductController extends Controller
     public function show(string $id)
     {
         //show the resource
-        $meta = Meta_Product::find($id);
-        if(!$meta){
+        $tags = Tags::find($id);
+        if(!$tags){
             return redirect()->back();
         }
-        return view("Meta.show", compact('meta'));
+        return view("Tags.show", compact('tags'));
     }
 
     /**
@@ -59,26 +59,26 @@ class Meta_ProductController extends Controller
     public function edit(string $id)
     {
         //edit the resource
-        $meta = Meta_Product::find($id);
-        if(!$meta){
+        $tags = Tags::find($id);
+        if(!$tags){
             return redirect()->back();
         }
-        return view("Meta.edit", compact('meta'));
+        return view("Tags.edit", compact('tags'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Meta_ProductRequest $request, string $id)
+    public function update(TagsRequest $request, string $id)
     {
         //update the resource
-        $meta = Meta_Product::find($id);
-        if(!$meta){
+        $tags = Tags::find($id);
+        if(!$tags){
             return redirect()->back();
         }
-        $meta->update($request->all());
-        $meta->save();
-        return redirect()->route("Meta.index");
+        $tags->update($request->all());
+        $tags->save();
+        return redirect()->route("Tags.index");
     }
 
     /**
@@ -87,11 +87,11 @@ class Meta_ProductController extends Controller
     public function destroy(string $id)
     {
         //delete the resource
-        $meta = Meta_Product::find($id);
-        if(!$meta){
+        $tags = Tags::find($id);
+        if(!$tags){
             return redirect()->back();
         }
-        $meta->delete();
-        return redirect()->route("Meta.index");
+        $tags->delete();
+        return redirect()->route("Tags.index");
     }
 }

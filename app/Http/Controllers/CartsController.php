@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Meta_ProductRequest;
-use App\Models\Meta_Product;
+use App\Http\Requests\CartsRequest;
+use App\Models\Carts;
 use Illuminate\Http\Request;
 
-class Meta_ProductController extends Controller
+class CartsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class Meta_ProductController extends Controller
     public function index()
     {
         //index the resource
-        $meta = Meta_Product::all();
-        return view("Meta.index",compact('meta'));
+        $carts = Carts::all();
+        return view("Carts.index",compact('carts'));
     }
 
     /**
@@ -24,20 +24,20 @@ class Meta_ProductController extends Controller
     public function create()
     {
         //create a new resource
-        return view("Meta.create");
+        return view("Carts.create");
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Meta_ProductRequest $request)
+    public function store(CartsRequest $request)
     {
-        //store the new resource
-        $meta = Meta_Product::create([$request->all()]);
-        if(!$meta){
+        //store the resource
+        $carts = Carts::create($request->all());
+        if(!$carts){
             return redirect()->back();
         }
-        return redirect()->route("Meta.index");
+        return redirect()->route("Carts.index");
     }
 
     /**
@@ -46,11 +46,11 @@ class Meta_ProductController extends Controller
     public function show(string $id)
     {
         //show the resource
-        $meta = Meta_Product::find($id);
-        if(!$meta){
+        $carts = Carts::find($id);
+        if(!$carts){
             return redirect()->back();
         }
-        return view("Meta.show", compact('meta'));
+        return view("Carts.show",compact('carts'));
     }
 
     /**
@@ -59,26 +59,26 @@ class Meta_ProductController extends Controller
     public function edit(string $id)
     {
         //edit the resource
-        $meta = Meta_Product::find($id);
-        if(!$meta){
+        $carts = Carts::find($id);
+        if(!$carts){
             return redirect()->back();
         }
-        return view("Meta.edit", compact('meta'));
+        return view("Carts.edit",compact('carts'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Meta_ProductRequest $request, string $id)
+    public function update(CartsRequest $request, string $id)
     {
         //update the resource
-        $meta = Meta_Product::find($id);
-        if(!$meta){
+        $carts = Carts::find($id);
+        if(!$carts){
             return redirect()->back();
         }
-        $meta->update($request->all());
-        $meta->save();
-        return redirect()->route("Meta.index");
+        $carts->update($request->all());
+        $carts->save();
+        return redirect()->route("Carts.index");
     }
 
     /**
@@ -87,11 +87,11 @@ class Meta_ProductController extends Controller
     public function destroy(string $id)
     {
         //delete the resource
-        $meta = Meta_Product::find($id);
-        if(!$meta){
+        $carts = Carts::find($id);
+        if(!$carts){
             return redirect()->back();
         }
-        $meta->delete();
-        return redirect()->route("Meta.index");
+        $carts->delete();
+        return redirect()->route("Carts.index");
     }
 }

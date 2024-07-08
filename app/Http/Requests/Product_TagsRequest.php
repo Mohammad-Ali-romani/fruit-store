@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class Meta_ProductRequest extends FormRequest
+class Product_TagsRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,8 +22,9 @@ class Meta_ProductRequest extends FormRequest
     public function rules(): array
     {
         return [
-            // require validation rules
-            'name'      =>      'required'
+            //required validation
+            'product_id'        =>      'required',
+            'tags_id'           =>      'required',
         ];
     }
 }
