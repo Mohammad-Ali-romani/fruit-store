@@ -17,21 +17,21 @@
     
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="{{route("Category.index")}}">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Product</span></a>
+                        <span>Category Products</span></a>
                 </li>
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="{{route("Products.index")}}">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard</span></a>
+                        <span>Products</span></a>
                 </li>
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="{{route("Main_Info.index")}}">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard</span></a>
+                        <span>Main Info</span></a>
                 </li>
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">

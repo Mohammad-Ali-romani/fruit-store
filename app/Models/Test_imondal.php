@@ -13,4 +13,7 @@ class Test_imondal extends Model
         'comment'   ,
         'evaluation',
     ];
+    public function users(){
+        return $this->belongsTo(Users::class);
+    }
 }

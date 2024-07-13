@@ -12,9 +12,16 @@ class Orders extends Model
         'user_id',
         'city'   ,
         'country',
+        'postcode',
         'mobile' ,
         'address',
         'comment',
         'total'  ,
     ];
+    public function users(){
+        return $this->belongsTo(Users::class);
+    }
+    public function cart(){
+        return $this->hasMany(Carts::class);
+    }
 }

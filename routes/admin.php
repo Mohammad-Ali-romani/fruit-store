@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::view('Category','Category.index');
 
 
 

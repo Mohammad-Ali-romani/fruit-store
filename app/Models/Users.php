@@ -14,4 +14,13 @@ class Users extends Model
         'password',
         'is_admin',
     ];
+    public function reviews(){
+        return $this->hasMany(Reviews::class);
+    }
+    public function test(){
+        return $this->hasMany(Test_imondal::class);
+    }
+    public function order(){
+        return $this->hasMany(Orders::class);
+    }
 }

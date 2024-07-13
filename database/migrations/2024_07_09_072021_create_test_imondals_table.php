@@ -16,6 +16,11 @@ return new class extends Migration
             $table->string('evaluation');
             $table->string('comment');
             $table->timestamps();
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')
+                    ->references('id')
+                    ->on('users')
+                    ->onDelete('cascade');
         });
     }
 

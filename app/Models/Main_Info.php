@@ -18,6 +18,10 @@ class Main_Info extends Model
         'linkedin',
         'telegram',
         'about_as',
-        'about_as',
+        'privacy' ,
+        'condition',
+        'policy'  ,
+        'faqs'  ,
+        'unit'  ,
     ];
 }

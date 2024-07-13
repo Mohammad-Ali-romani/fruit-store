@@ -14,7 +14,11 @@ class Product extends Model
         'price',
         'image',
         'category_id',
-        'meta_id'
+        'meta_id',
+        'content',
+        'quantity',
+        'evaluation',
+        'old_price',
     ];
     public function category(){
       return $this->belongsTo(Category::class);
@@ -22,7 +26,14 @@ class Product extends Model
     public function Meta_Product(){
       return $this->hasMany(Meta_Product::class);
   }
-    public function Product_Tags(){
+    public function product_tags(){
       return $this->hasMany(Product_Tags::class);
   }
+    public function reviews(){
+      return $this->hasMany(Reviews::class);
+    }
+    public function cart(){
+      return $this->belongsTo(Carts::class);
+    }
+
 }

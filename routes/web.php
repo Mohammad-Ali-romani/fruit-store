@@ -1,6 +1,22 @@
 <?php
 
+use App\Http\Controllers\AllController;
+use App\Http\Controllers\CartsController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ContantsController;
+use App\Http\Controllers\Image_siderController;
+use App\Http\Controllers\Main_InfoController;
+use App\Http\Controllers\OrdersController;
+use App\Http\Controllers\Product_TagsController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ReviewsController;
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\SettingController;
+use App\Http\Controllers\TagsController;
+use App\Http\Controllers\Test_imondalController;
+use App\Models\Meta_Product;
+use App\Models\Services;
 use Illuminate\Support\Facades\Route;
 
 
@@ -40,3 +56,18 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 
+Route::resource('Products',ProductController::class);
+Route::resource('Category',CategoryController::class);
+Route::resource('Main_Info',Main_InfoController::class);
+Route::resource('Product_Tags',Product_TagsController::class);
+Route::resource('Tags',TagsController::class);
+Route::resource('Reviews',ReviewsController::class);
+Route::resource('All',AllController::class);
+Route::resource('Meta_Product',Meta_Product::class);
+Route::resource('Carts',CartsController::class);
+Route::resource('Orders',OrdersController::class);
+Route::resource('Contants',ContantsController::class);
+Route::resource('Test_Imandal',Test_imondalController::class);
+Route::resource('Setting',SettingController::class);
+Route::resource('Image_Slider',Image_siderController::class);
+Route::resource('Image_Slider',Image_siderController::class);

@@ -14,4 +14,10 @@ class Reviews extends Model
         'product_id',
         'evaluation',
     ];
+    public function users(){
+        return $this->belongsTo(Users::class);
+    }
+    public function product(){
+        return $this->belongsTo(Product::class);
+    }
 }

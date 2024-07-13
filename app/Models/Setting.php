@@ -12,5 +12,6 @@ class Setting extends Model
         'logo' ,
         'title',
         'desc' ,
+        'services_id' ,
     ];
 }
