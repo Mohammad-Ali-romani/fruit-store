@@ -10,7 +10,7 @@ class Meta_Product extends Model
     use HasFactory;
     protected $fillable = [
         'name',
-        'value'
+        'value',
     ];
     public function Product(){
         return $this->belongsTo(Product::class);

@@ -23,7 +23,8 @@ class Meta_ProductRequest extends FormRequest
     {
         return [
             // require validation rules
-            'name'      =>      'required'
+            'name'      =>      'required',
+            'value'      =>      'required'
         ];
     }
 }

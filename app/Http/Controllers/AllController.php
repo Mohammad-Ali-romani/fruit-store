@@ -15,7 +15,7 @@ class AllController extends Controller
     {
         //index the resource
         $all = All::all();
-        return view("All,index",compact('all'));
+        return view("All.index",compact('all'));
     }
 
     /**

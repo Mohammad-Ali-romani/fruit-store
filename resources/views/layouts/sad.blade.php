@@ -15,12 +15,20 @@
                 <!-- Divider -->
                 <hr class="sidebar-divider my-0">
     
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{route("Category.index")}}">
-                        <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Category Products</span></a>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="true" aria-controls="collapseTwo">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <span>Category Products</span>
+                    </a>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <a class="collapse-item" href="{{route("Category.index")}}">Index</a>
+                            <a class="collapse-item" href="{{route("Category.create")}}">Create</a>
+                        </div>
+                    </div>
                 </li>
+
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
                     <a class="nav-link" href="{{route("Products.index")}}">
@@ -35,46 +43,87 @@
                 </li>
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="{{route("All.index")}}">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard</span></a>
+                        <span>All</span></a>
                 </li>
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="{{route("Carts.index")}}">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard</span></a>
+                        <span>Carts</span></a>
                 </li>
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="{{route("Contants.index")}}">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard</span></a>
+                        <span>Contants</span></a>
                 </li>
-    
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route("Image_Slider.index")}}">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Image Slider</span></a>
+                </li>
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route("Meta_Product.index")}}">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Meta Product</span></a>
+                </li>
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route("Orders.index")}}">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Orders</span></a>
+                </li>
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route("Product_Tags.index")}}">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Product Tags</span></a>
+                </li>
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route("Reviews.index")}}">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Reviews</span></a>
+                </li>
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route("Services.index")}}">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Services</span></a>
+                </li>
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route("Setting.index")}}">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Setting</span></a>
+                </li>
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route("Tags.index")}}">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Tags</span></a>
+                </li>
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route("Test_Imondal.index")}}">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Test Imondal</span></a>
+                </li>
+                                <!-- Heading -->
+                                <div class="sidebar-heading">
+                                    Interface
+                                </div>
+                    
+                                <!-- Nav Item - Pages Collapse Menu -->
+
                 {{-- <!-- Divider -->
                 <hr class="sidebar-divider">
     
-                <!-- Heading -->
-                <div class="sidebar-heading">
-                    Interface
-                </div>
-    
-                <!-- Nav Item - Pages Collapse Menu -->
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                        aria-expanded="true" aria-controls="collapseTwo">
-                        <i class="fas fa-fw fa-cog"></i>
-                        <span>Components</span>
-                    </a>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                        <div class="bg-white py-2 collapse-inner rounded">
-                            <h6 class="collapse-header">Custom Components:</h6>
-                            <a class="collapse-item" href="buttons.html">Buttons</a>
-                            <a class="collapse-item" href="cards.html">Cards</a>
-                        </div>
-                    </div>
-                </li>
+
     
                 <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item">

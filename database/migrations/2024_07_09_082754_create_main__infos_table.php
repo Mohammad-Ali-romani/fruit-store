@@ -22,6 +22,11 @@ return new class extends Migration
             $table->string('linkedin');
             $table->string('telegram');
             $table->string('about_as');
+            $table->string('privacy');
+            $table->string('condition');
+            $table->string('policy');
+            $table->string('faqs');
+            $table->string('unit');
             $table->timestamps();
         });
     }
