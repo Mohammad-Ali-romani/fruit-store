@@ -76,7 +76,7 @@ class Image_siderController extends Controller
         if(!$sider){
             return redirect()->back();
         }
-        $sider->update();
+        $sider->update($request->all());
         $sider->save();
         return redirect()->route("Image_Sider.index");
     }

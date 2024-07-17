@@ -13,6 +13,6 @@ class Category extends Model
         'calor'
     ];
     public function product(){
-        return $this->hasMany(Product::class);
+        return $this->hasMany(Producte::class);
     }
 }

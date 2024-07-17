@@ -13,7 +13,7 @@ class Product_Tags extends Model
         'tags_id',
     ];
     public function Product(){
-        return $this->belongsTo(Product::class);
+        return $this->belongsTo(Producte::class);
       }
       public function Tags(){
         return $this->belongsTo(Tags::class);

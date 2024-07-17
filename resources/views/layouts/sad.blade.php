@@ -28,24 +28,70 @@
                         </div>
                     </div>
                 </li>
-
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{route("Products.index")}}">
-                        <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Products</span></a>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Products"
+                        aria-expanded="true" aria-controls="Products">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <span> Products</span>
+                    </a>
+                    <div id="Products" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <a class="collapse-item" href="{{route("Producte.index")}}">Index</a>
+                            <a class="collapse-item" href="{{route("Producte.create")}}">Create</a>
+                        </div>
+                    </div>
                 </li>
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{route("Main_Info.index")}}">
-                        <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Main Info</span></a>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Meta"
+                        aria-expanded="true" aria-controls="Meta">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <span>Meta Products</span>
+                    </a>
+                    <div id="Meta" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <a class="collapse-item" href="{{route("Meta.index")}}">Index</a>
+                            <a class="collapse-item" href="{{route("Meta.create")}}">Create</a>
+                        </div>
+                    </div>
                 </li>
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{route("All.index")}}">
-                        <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>All</span></a>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Ads"
+                        aria-expanded="true" aria-controls="Ads">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <span>Ads </span>
+                    </a>
+                    <div id="Ads" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <a class="collapse-item" href="{{route("Ads.index")}}">Index</a>
+                            <a class="collapse-item" href="{{route("Ads.create")}}">Create</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Image_Slider"
+                        aria-expanded="true" aria-controls="Image_Slider">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <span>Image Slider </span>
+                    </a>
+                    <div id="Image_Slider" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <a class="collapse-item" href="{{route("Image_Sider.index")}}">Index</a>
+                            <a class="collapse-item" href="{{route("Image_Sider.create")}}">Create</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#main"
+                        aria-expanded="true" aria-controls="main">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <span>Main Info </span>
+                    </a>
+                    <div id="main" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <a class="collapse-item" href="{{route("Main.index")}}">Index</a>
+                            <a class="collapse-item" href="{{route("Main.create")}}">Create</a>
+                        </div>
+                    </div>
                 </li>
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
@@ -59,18 +105,7 @@
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Contants</span></a>
                 </li>
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{route("Image_Slider.index")}}">
-                        <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Image Slider</span></a>
-                </li>
-                <!-- Nav Item - Dashboard -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{route("Meta_Product.index")}}">
-                        <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Meta Product</span></a>
-                </li>
+
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
                     <a class="nav-link" href="{{route("Orders.index")}}">

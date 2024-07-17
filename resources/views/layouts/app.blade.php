@@ -11,6 +11,8 @@
 
     <title>Dashboard</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <!-- Custom fonts for this template-->
     <link href="{{asset("Dashboard/css/all.min.css")}}" rel="stylesheet" type="text/css">
     <link
@@ -19,7 +21,15 @@
 
     <!-- Custom styles for this template-->
     <link href="{{asset("Dashboard/css/sb-admin-2.min.css")}}" rel="stylesheet">
+    <link href="{{asset("Dashboard/dataTables/dataTables.bootstrap4.min.css")}}" rel="stylesheet">
+    <link href="{{asset("Dashboard/dataTables/dataTables.bootstrap4.css")}}" rel="stylesheet">
     <link href="{{asset("Dashboard/css/style.css")}}" rel="stylesheet">
+
+    <style>
+    img{
+      width: 100px;
+    }
+    </style>
 
 </head>
 
@@ -58,7 +68,11 @@
     <!-- Page level custom scripts -->
     <script src="{{asset("Dashboard/js/chart-area-demo.js")}}"></script>
     <script src="{{asset("Dashboard/js/chart-pie-demo.js")}}"></script>
-
+    <script src="{{asset("Dashboard/dataTables/dataTables.bootstrap4.js")}}"></script>
+    <script src="{{asset("Dashboard/dataTables/dataTables.bootstrap4.min.js")}}"></script>
+    <script src="{{asset("Dashboard/dataTables/jquery.dataTables.js")}}"></script>
+    <script src="{{asset("Dashboard/dataTables/jquery.dataTables.min.js")}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
