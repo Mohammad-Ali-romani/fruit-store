@@ -23,10 +23,10 @@ class CartsRequest extends FormRequest
     {
         return [
             //required validation
-            'order_id'          =>      'required',
-            'product_id'        =>      'required',
+            'order_id'          =>      'nullable',
+            'producte_id'       =>      'required',
             'quantity'          =>      'required',
-            'total'             =>      'required',
+            'total'             =>      'nullable',
         ];
     }
 }

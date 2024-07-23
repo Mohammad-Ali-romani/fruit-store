@@ -1,16 +1,15 @@
 <?php
 
 use App\Http\Controllers\AdsController;
-use App\Http\Controllers\AllController;
 use App\Http\Controllers\CartsController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContantsController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Image_siderController;
 use App\Http\Controllers\Main_InfoController;
 use App\Http\Controllers\MetaController;
 use App\Http\Controllers\OrdersController;
 use App\Http\Controllers\Product_TagsController;
-use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProducteController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReviewsController;
@@ -18,13 +17,15 @@ use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\TagsController;
 use App\Http\Controllers\Test_imondalController;
-use App\Models\Meta_Product;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', function () {
-    return view('front.home');
-});
+// Route::get('/', function () {
+//     return view('front.home');
+// });
+
+Route::get('/', [HomeController::class, 'index']);
+
 
 Route::get('/front.login', function () {
     return view("front.auth.login");

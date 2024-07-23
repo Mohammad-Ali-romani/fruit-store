@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\SettingRequest;
+use App\Models\Services;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 
@@ -24,7 +25,8 @@ class SettingController extends Controller
     public function create()
     {
         //create a new resource
-        return view("Setting.create");
+        $service = Services::all();
+        return view("Setting.create",compact('service'));
     }
 
     /**

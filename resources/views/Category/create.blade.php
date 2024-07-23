@@ -24,9 +24,10 @@
               <input type="text" name="name" class="form-control" id="name">
             </div>
             <div class="col-12" style="margin: 10px">
-                <label for="calor" class="form-label">Calor</label>
-                <input type="text" name="calor" class="form-control" id="calor">
-              </div>
+              <label for="calor" class="form-label">Calor</label>
+              <input type="color" name="calor" class="form-control" id="calor" style="width: 80px">
+          </div>
+          
               <div class="text-center" style="padding: 20px">
                 <div class="my-2"></div>
                 <div class="d-flex justify-content-end">

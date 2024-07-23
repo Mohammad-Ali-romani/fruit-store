@@ -9,10 +9,10 @@ class Carts extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'quantify',
+        'quantity',
         'total',
         'order_id',
-        'product_id',
+        'producte_id',
     ];
     public function order(){
         return $this->belongsTo(Orders::class);

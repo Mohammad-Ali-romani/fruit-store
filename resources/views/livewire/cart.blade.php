@@ -1,3 +1,7 @@
 <div>
-    {{-- The whole world belongs to you. --}}
+    @if ($cart->isNotEmpty())
+    {{ $cart->last()->id }}
+    @else
+        0
+    @endif
 </div>

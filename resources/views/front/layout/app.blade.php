@@ -28,10 +28,7 @@
         <!-- Template Stylesheet -->
         <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
-        <style>
-
-
-        </style>
+        @livewireStyles
 
     </head>
 
@@ -43,7 +40,7 @@
 
         @include('front.layout.footer')
 
-        
+        @livewireScripts
     <!-- JavaScript Libraries -->
     <script src="{{asset('jquery/jquery.js')}}"></script>
     <script src="{{asset('bootstrap/bootstrap.js')}}"></script>

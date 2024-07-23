@@ -17,7 +17,7 @@
           <h5 class="card-title">Producte Create Data Form</h5>
 
           <!-- Vertical Form -->
-          <form class="row g-3" action="{{route("Producte.update",$Producte->id)}}" method="POST" enctype="multipart/form-data">
+          <form class="row g-3" action="{{route("Producte.update",$producte->id)}}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="col-12" style="margin: 10px">

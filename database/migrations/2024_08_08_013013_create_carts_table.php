@@ -14,16 +14,16 @@ return new class extends Migration
         Schema::create('carts', function (Blueprint $table) {
             $table->id();
             $table->string('quantity');
-            $table->string('total');
-            $table->unsignedBigInteger('order_id');
+            $table->string('total')->nullable();
+            $table->unsignedBigInteger('order_id')->nullable();
             $table->foreign('order_id')
                     ->references('id')
                     ->on('orders')
                     ->onDelete('cascade');
-            $table->unsignedBigInteger('product_id');
-            $table->foreign('product_id')
+            $table->unsignedBigInteger('producte_id');
+            $table->foreign('producte_id')
                     ->references('id')
-                    ->on('products')
+                    ->on('productes')
                     ->onDelete('cascade');
             $table->timestamps();
         });

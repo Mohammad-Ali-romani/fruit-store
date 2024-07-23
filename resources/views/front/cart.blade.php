@@ -140,6 +140,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    
                 </div>
                 <div class="mt-5">
                     <input type="text" class="border-0 border-bottom rounded me-5 py-3 mb-4" placeholder="Coupon Code">

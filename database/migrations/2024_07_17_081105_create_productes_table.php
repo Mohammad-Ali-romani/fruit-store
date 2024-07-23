@@ -25,7 +25,7 @@ return new class extends Migration
             $table->unsignedBigInteger('meta_id');
             $table->foreign('meta_id')
                     ->references('id')
-                    ->on('meta_products')
+                    ->on('metas')
                     ->onDelete('cascade');
             $table->string('content');
             $table->string('quantity');

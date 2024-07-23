@@ -24,7 +24,7 @@ class CategoryRequest extends FormRequest
         return [
             //required validation
             'name'       =>      'required',
-            'calor'      =>      'required',
+            'calor'      =>      'required|string|max:7',
         ];
     }
 }

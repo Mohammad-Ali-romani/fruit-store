@@ -14,4 +14,7 @@ class Setting extends Model
         'desc' ,
         'services_id' ,
     ];
+    public function services(){
+        return $this->hasMany(Services::class);
+    }
 }

@@ -23,9 +23,10 @@ class SettingRequest extends FormRequest
     {
         return [
             //required validation
-            'logo'      =>   'required',
-            'title'     =>   'required',
-            'desc'      =>   'required',
+            'logo'            =>   'required',
+            'title'           =>   'required',
+            'desc'            =>   'required',
+            'service_id'      =>   'required',
         ];
     }
 }

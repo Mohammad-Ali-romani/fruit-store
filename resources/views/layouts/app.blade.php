@@ -18,12 +18,10 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+        
 
     <!-- Custom styles for this template-->
     <link href="{{asset("Dashboard/css/sb-admin-2.min.css")}}" rel="stylesheet">
-    <link href="{{asset("Dashboard/dataTables/dataTables.bootstrap4.min.css")}}" rel="stylesheet">
-    <link href="{{asset("Dashboard/dataTables/dataTables.bootstrap4.css")}}" rel="stylesheet">
-    <link href="{{asset("Dashboard/css/style.css")}}" rel="stylesheet">
 
     <style>
     img{
@@ -68,10 +66,6 @@
     <!-- Page level custom scripts -->
     <script src="{{asset("Dashboard/js/chart-area-demo.js")}}"></script>
     <script src="{{asset("Dashboard/js/chart-pie-demo.js")}}"></script>
-    <script src="{{asset("Dashboard/dataTables/dataTables.bootstrap4.js")}}"></script>
-    <script src="{{asset("Dashboard/dataTables/dataTables.bootstrap4.min.js")}}"></script>
-    <script src="{{asset("Dashboard/dataTables/jquery.dataTables.js")}}"></script>
-    <script src="{{asset("Dashboard/dataTables/jquery.dataTables.min.js")}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 

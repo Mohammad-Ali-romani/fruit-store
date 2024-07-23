@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CartsRequest;
 use App\Models\Carts;
+use App\Models\Producte;
 use Illuminate\Http\Request;
 
 class CartsController extends Controller
@@ -24,7 +25,8 @@ class CartsController extends Controller
     public function create()
     {
         //create a new resource
-        return view("Carts.create");
+        $producte = Producte::all();
+        return view("front.home",compact('producte'));
     }
 
     /**
@@ -37,7 +39,7 @@ class CartsController extends Controller
         if(!$carts){
             return redirect()->back();
         }
-        return redirect()->route("Carts.index");
+        return redirect()->back();
     }
 
     /**

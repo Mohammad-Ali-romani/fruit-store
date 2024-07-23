@@ -17,7 +17,12 @@ class ProducteController extends Controller
     {
         //index the resource
         $producte = Producte::all();
-        return view("Producte.index");
+        $category = Category::all();
+        $data = [
+            'producte'      => $producte,
+            'category'      => $category
+        ];
+        return view("Producte.index",$data);
     }
 
     /**
@@ -71,10 +76,17 @@ class ProducteController extends Controller
     {
         //show the resource
         $producte = Producte::find($id);
+        $category = Category::all();
+        $meta = Meta::all();
+        $data = [
+            'category' => $category,
+            'meta'      => $meta,
+            'producte' => $producte,
+        ];
         if(!$producte){
             return redirect()->back();
         }
-        return view("Producte.show",compact('producte'));
+        return view("Producte.show",$data);
     }
 
     /**
@@ -84,10 +96,17 @@ class ProducteController extends Controller
     {
         //edit the resource
         $producte = Producte::find($id);
+        $category = Category::all();
+        $meta = Meta::all();
+        $data = [
+            'category' => $category,
+            'meta'      => $meta,
+            'producte' => $producte,
+        ];
         if(!$producte){
             return redirect()->back();
         }
-        return view("Producte.edit",compact('producte'));
+        return view("Producte.edit",$data);
     }
 
     /**
@@ -151,7 +170,7 @@ class ProducteController extends Controller
         if(file_exists($file)){
             unlink($file);
             $producte->delete();
-            return redirect()->route("producte.index");
+            return redirect()->route("Producte.index");
         }
         $producte->delete();
         return redirect()->route("Producte.index");

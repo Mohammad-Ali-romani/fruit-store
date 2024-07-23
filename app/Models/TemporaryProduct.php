@@ -5,10 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Services extends Model
+class TemporaryProduct extends Model
 {
     use HasFactory;
-    public function setting(){
-        return $this->belongsTo(Services::class);
-    }
+    protected $fillable = ['name', 'price'];
 }
